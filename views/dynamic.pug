@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+    head
+        style
+            include style.css
+        meta(charset='UTF-8')
+        title Node Hello world example
+    body
+    h1 Logowanie
+    form(action='http://localhost:3000/userform', method='GET')
+      p
+        | First Name:
+        input(type='text', name='first_name')
+      p
+        | Last Name:
+        input(type='text', name='last_name')
+    button
+        a(href= url) zaloguj
